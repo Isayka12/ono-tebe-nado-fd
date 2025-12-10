@@ -65,20 +65,21 @@ header {
   line-height: 115%;
   letter-spacing: 0.3em;
   text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .aligned-text {
   display: block;
 }
 .aligned-text_left {
-  padding-bottom: 20px;
   text-align: left;
 }
 
 .aligned-text_center {
   position: relative;
   left: 15px;
-  padding-bottom: 20px;
   text-align: center;
 }
 
@@ -247,7 +248,7 @@ header {
 .footer {
   display: flex;
   justify-content: space-between;
-  margin-top: 180px;
+  margin-top: 185px;
   padding: 0 50px 82px;
 }
 
