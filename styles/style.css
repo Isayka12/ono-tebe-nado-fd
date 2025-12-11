@@ -1,4 +1,4 @@
-header {
+.header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
@@ -10,7 +10,7 @@ header {
   min-height: 105px;
 }
 
-.header__menu {
+.header__menu-list {
   display: flex;
   gap: 13px;
   color: #000;
@@ -28,12 +28,16 @@ header {
   max-width: 240px;
   color: #000;
   font-size: 18px;
+  font-style: normal;
   line-height: 135%;
   text-decoration-skip-ink: none;
 }
 
-.active {
+.menu-list-active {
   text-decoration: none;
+}
+
+.header__menu-list > li:first-child {
   list-style: none;
 }
 
@@ -58,6 +62,9 @@ header {
 
 .cover__title {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   padding-bottom: 106px;
   color: #fff;
   font-weight: 700;
@@ -65,9 +72,6 @@ header {
   line-height: 115%;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
 }
 
 .aligned-text {
@@ -117,7 +121,7 @@ header {
 }
 
 .lots {
-  margin: 173px 24px 0px;
+  margin: 180px 24px 0px;
 }
 
 .lots__heading {
@@ -213,7 +217,7 @@ header {
   align-items: center;
   width: 240px;
   height: 240px;
-  margin-top: 40px;
+  margin-top: 35px;
   border-radius: 100%;
   background-color: #000;
 }
@@ -223,19 +227,24 @@ header {
   height: 112px;
 }
 
+.about__content {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  padding-top: 133px;
+}
+
 .about__title {
-  margin-top: 140px;
   color: #000;
   font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
 }
 
-.container__about_text {
+.about__content-container-text {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-top: 100px;
 }
 
 .about__text {
@@ -258,6 +267,7 @@ header {
   font-size: 18px;
   text-align: center;
   text-decoration-skip-ink: none;
+  list-style: none;
 }
 
 .footer__social-list {
